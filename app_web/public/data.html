@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Employee Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style1.css">
+</head>
+<body>
+<h1>Employee Health Status</h1>
+
+<table class="content-table">
+  <thead>
+    <tr>
+      <th>Employee Name</th>
+      <th>Email Id</th>
+      <th>Time Interval</th>
+      <th>Heart Rate </th>
+      <th>Oxygen Saturation</th>
+      <th>Body Temperature</th>
+      <th>Blood Pressure</th>
+        <th>Health Status</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+
+      <td id="Name"></td>
+        <td id="Email"></td>
+        <td id="ll"></td>
+        <td id="h"></td>
+         <td id="Oxy"></td>
+         <td id="te"></td>
+         <td id="Bp"></td>
+        <td id ="ht"></td>
+
+
+    </tr>
+
+  </tbody>
+</table>
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBTZS3Lvp_yNfFeXNIo0Y379NdQq_cV0FU",
+    authDomain: "employee-health-tracker.firebaseapp.com",
+    databaseURL: "https://employee-health-tracker-default-rtdb.firebaseio.com",
+    projectId: "employee-health-tracker",
+    storageBucket: "employee-health-tracker.appspot.com",
+    messagingSenderId: "898164968439",
+    appId: "1:898164968439:web:6b4a99aafd4b6d86a9fcf2",
+    measurementId: "G-8QL4XHGDJN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<p align="right">
+<button class="button" onclick="next()">Medical Records</button>
+</p>
+<p align="right">
+<button class="button1" onclick="logout()">Log Out</button>
+</p>
+<script src="./app.js" ></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

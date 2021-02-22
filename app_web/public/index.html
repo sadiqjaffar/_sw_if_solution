@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="ch.css" />
+
+
+</head>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+
+<body>
+
+  <div id="login_div" class="main-div">
+    <h1> Admin Login</h1>
+    <input type="email" placeholder="Email" id="email_field" />
+    <input type="password" placeholder="Password" id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+  <div id="user_div" class="loggedin-div">
+  </div>
+   <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                Chat support!
+            </div>
+            <div class="chatbox__messages">
+                <div>
+                    <div class="messages__item messages__item--visitor">
+                        Hi! How can I help you ?
+                    </div>
+                    .<div class="messages__item messages__item--typing">
+                        <span class="messages__dot"></span>
+                        <span class="messages__dot"></span>
+                        <span class="messages__dot"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message">
+                <button id ="chatbox__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button>Send</button>
+        </div>
+    </div>
+
+   <script>
+    var firebaseConfig = {
+       apiKey: "AIzaSyBTZS3Lvp_yNfFeXNIo0Y379NdQq_cV0FU",
+       authDomain: "employee-health-tracker.firebaseapp.com",
+       databaseURL: "https://employee-health-tracker-default-rtdb.firebaseio.com",
+       projectId: "employee-health-tracker",
+       storageBucket: "employee-health-tracker.appspot.com",
+       messagingSenderId: "898164968439",
+       appId: "1:898164968439:web:6b4a99aafd4b6d86a9fcf2",
+       measurementId: "G-8QL4XHGDJN"
+     };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="index.js"></script>
+ <script src="chat.js"></script>
+  <script src="ch.js"></script>
+
+
+
+</body>
+</html>
