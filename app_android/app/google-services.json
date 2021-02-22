@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "898164968439",
+    "project_id": "employee-health-tracker",
+    "storage_bucket": "employee-health-tracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898164968439:android:887800cf1ca6c0c6a9fcf2",
+        "android_client_info": {
+          "package_name": "com.googleapi.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898164968439-8n7l9prs4igtqk726r468s7hpa7d1g5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-5ot-GOr7XNwrPU5FwlIs5pL2Fl2xWz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898164968439-8n7l9prs4igtqk726r468s7hpa7d1g5m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
